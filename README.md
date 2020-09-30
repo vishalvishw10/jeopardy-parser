@@ -8,7 +8,7 @@ Quick note: this project does **not** use semantic versioning (`python parser.py
 What is this?
 -------------
 
-This is a Python script to extract [Jeopardy!] clues from the [J! Archive] website and dump them into a SQLite database for use elsewhere (no particular application is intended). Python 2.7.* and SQLite 3.7.* on *nix have been tested and confirmed to work (requires BeautifulSoup 4 and the lxml parser).
+This is a Python script to extract [Jeopardy!] clues from the [J! Archive] website and dump them into an SQLite database for use elsewhere (no particular application is intended). Python 2.7.* and SQLite 3.7.* on *nix have been tested and confirmed to work (requires BeautifulSoup 4 and the lxml parser).
 
   [Jeopardy!]:http://www.jeopardy.com/
   [J! Archive]:http://j-archive.com/
@@ -34,7 +34,7 @@ There are two important steps:
 
 The first step, downloading, will depend on the machine: the download script will use twice the number of available cores to download game files in parallel and will take around an hour to complete. The second step, parsing, should take ~30 minutes (on a 1.7 GHz Core i5 w/ 4 GB RAM). In total, you're looking at around 2 hours (probably less).
 
-The complete download of the game files is ~350MB, and the resulting database file is ~50MB (although these numbers are qucikly outdated as the number of games increases).
+The complete download of the game files is ~350MB, and the resulting database file is ~50MB (although these numbers are quickly outdated as the number of games increases).
 
 Querying the database
 ---------------------
